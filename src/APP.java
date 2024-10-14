@@ -6,7 +6,7 @@ public class APP {
         String opcion;
         String nombreFichero = "";
 
-        // Цикл для отображения меню
+
         do {
             System.out.println("\n");
             System.out.println("\n");
@@ -27,10 +27,10 @@ public class APP {
 
             if (opcion.isEmpty()) {
                 System.out.println("Saliendo del programa...");
-                break; // Выход из цикла и программы
+                break;
             }
 
-            // Обработка выбранной опции
+
             switch (opcion) {
                 case "1":
                     CrearFichero.CrearFichero(nombreFichero);
@@ -61,12 +61,11 @@ public class APP {
                     break;
             }
 
-            // Даем пользователю время, чтобы увидеть результат перед возвращением к меню
+
             System.out.println("\nPresiona Enter para continuar...");
             teclado.nextLine();
 
-        } while (true); // Цикл продолжается пока пользователь не введет пустую строку для выхода
-
-        teclado.close(); // Закрытие сканера
+        } while (true);
+        teclado.close();
     }
 }
